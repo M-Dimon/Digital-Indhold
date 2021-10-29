@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background-color: -------;
+    --secoundary-background-color: -------;
+    
+    --primary-color: -------;
+    --primary-shadow-color: -------;
+    
+    --secoundary-color: -------;
+    --secoundary-shadow-color: -------;
+    
+    --third-color: -------;
+    
+    --primary-text-color: -------;
+    --secoundary-text-color: -------;
+    --third-text-color: -------;
+    
+    --overlay-element-color: -------;
+    --overlay-element-color-alpha: -------;
+    --overlay-element-opacity: -------;
+    
+    --border-color-alpha: -------;
+    --border-opacity: -------;
+    
+    --input-color: -------;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+	/* font-family: 'Source Sans Pro', sans-serif;
+    font-display: optional; */
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secoundary-text-color);
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden-element {
+    display: none;
+}
+
+/*==========================================================*/
+/************************GENERAL*****************************/
+/*==========================================================*/
+
+
+/*========================================================*/
+/*==========================Body==========================*/
+/*========================================================*/
+
