@@ -10,14 +10,14 @@
     --primary-color: -------;
     --primary-shadow-color: -------;
     
-    --secoundary-color: -------;
+    --secoundary-color: #A80000;
     --secoundary-shadow-color: -------;
     
     --third-color: -------;
     
-    --primary-text-color: -------;
-    --secoundary-text-color: -------;
-    --third-text-color: -------;
+    --primary-text-color: #1E1E1E;
+    --secoundary-text-color: #ffffff;
+    --third-text-color: #4B4B4B;
     
     --overlay-element-color: -------;
     --overlay-element-color-alpha: -------;
@@ -136,8 +136,13 @@ nav ul li a.active {
 /************************GENERAL*****************************/
 /*==========================================================*/
 
-h1 {
+.red {
+    color: var(--secoundary-color);
+}
 
+h1 {
+    font-size: 86px;
+    color: var(--primary-text-color);
 }
 
 h2 {
@@ -148,12 +153,36 @@ header {
     width: 100%;
     height: 830px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .header__center {
     width: 1300px;
     height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    width: 580px;
+    height: 330px;
+}
+
+.header-text h1  {
+    
+}
+
+.header-text p {
+    font-size: 32px;
+    color: var(--third-text-color);
+    margin-top: 30px;
+}
+
+.video-box {
+    width: 640px;
+    height: 360px;
+    background-color: var(--third-text-color);
 }
 
 /*========================================================*/
