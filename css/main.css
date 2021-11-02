@@ -6,7 +6,6 @@
 :root {
     --primary-color: #ffffff;
     --secoundary-color: #A80000;
-    
     --third-color: #F8F8F8;
     
     --main-background-color: #ffffff;
@@ -26,6 +25,8 @@
     
     --input-color: #FFFCEA;
     --button-color: #3575D6;
+
+    --footer-color: #111823;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -55,29 +56,45 @@ body {
 input {
     width: 450px;
     height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-display: optional;
     border: 1px solid var(--border-color);
     border-radius: 15px;
     background-color: var(--input-color);
     margin-bottom: 20px;
+    padding: 20px;
+}
+
+.input-container {
+    width: 450px;
+    height: 60px;
 }
 
 textarea {
     width: 450px;
     height: 185px;
+    font-family: 'Montserrat', sans-serif;
+    font-display: optional;
     border: 1px solid var(--border-color);
     border-radius: 15px;
     background-color: var(--input-color);
     resize: none;
+    padding: 20px;
 }
 
 button {
     width: 450px;
     height: 60px;
     font-size: 24px;
+    font-weight: 700;
     color: var(--primary-color);
     border-radius: 15px;
     background-color: var(--button-color);
     border: 0px;
+}
+
+.button--below {
+    margin-top: 50px;
 }
 
 /*==========================================================*/
@@ -131,7 +148,7 @@ nav ul {
 }
 
 nav ul li {
-    width: 200px;
+    width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,13 +171,14 @@ nav ul li a {
     font-weight: 400;
     line-height: 18px;
     text-align: center;
-    color: var(--third-text-color);
+    color: #BCBCBC;
     text-decoration: none;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
     font-weight: 600;
+    color: var(--primary-text-color);
 }
 
 /*==========================================================*/
@@ -247,6 +265,32 @@ header {
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
     border-radius: 10px;
     padding: 30px
+}
+
+.module__box h3 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.module__box input {
+    width: 100%;
+}
+
+.module__box .input-container {
+    width: 100%;
+    position: relative;
+}
+
+.module__box .input-container p {
+    font-size: 16px;
+    color: #7A7A7A;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.module__box button {
+    width: 100%;
 }
 
 .module__box--large {
@@ -488,4 +532,65 @@ header {
 .contact__center form {
     display: flex;
     flex-direction: column;
+}
+
+/*==========Partners==========*/
+/*============================*/
+
+.partners {
+    width: 100%;
+    height: 210px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+}
+
+.partners__center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnere__logo {
+    width: 195px;
+    height: 85px;
+    background-color: black;
+}
+
+/*===========Footer===========*/
+/*============================*/
+
+footer {
+    width: 100%;
+    height: 350px;
+    color: var(--secoundary-text-color);
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__box {
+    width: 305px;
+    height: auto;
+}
+
+.footer__box h3 {
+    font-size: 16px;
+    color: var(--secoundary-text-color);
+    margin-bottom: 20px;
+}
+
+.footer__box p {
+    font-size: 16px;
+    color: var(--secoundary-text-color);
 }
