@@ -225,16 +225,16 @@ header {
     justify-content: space-between;
 }
 
-.header-text {
+.header__text {
     width: 580px;
     height: 330px;
 }
 
-.header-text h1  {
+/* .header__text h1  {
 
-}
+} */
 
-.header-text p {
+.header__text p {
     font-size: 32px;
     line-height: 40px;
     color: var(--third-text-color);
@@ -309,7 +309,7 @@ header {
 
 .module__box--placement2 {
     height: auto;
-    margin-top: -347px;
+    margin-top: -281px;
 }
 
 .module__box--placement2 h3 {
@@ -635,7 +635,7 @@ header {
 }
 
 .partnere__logo {
-    width: 195px;
+    width: 200px;
     height: 85px;
     display: flex;
     align-items: center;
