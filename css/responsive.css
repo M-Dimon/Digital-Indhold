@@ -103,7 +103,9 @@
       width: 800px;
       height: 400px;
     }
-
+    .introduction__text {
+        width: 500px;
+    }
     .introduction__text h2 {
       font-size: 26px;
     }
@@ -117,7 +119,7 @@
       height: 400px;
     }
     .what-we-do {
-      height: 600px;
+      height: 550px;
     }
 
     .what-we-do h2 {
@@ -125,10 +127,9 @@
     }
 
     .points__box {
-        width: 300px;
+        width: 240px;
         height: 330px;
     }
-
 
     .what-we-do__points .points__box h3{
       font-size: 20px;
