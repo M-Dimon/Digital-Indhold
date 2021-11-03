@@ -1,0 +1,658 @@
+/* Tablet */
+@media screen and (max-width: 1050px)
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secoundary-color: #A80000;
+    --third-color: #F8F8F8;
+
+    --main-background-color: #ffffff;
+    --secoundary-background-color: #870000;
+    --tritiary-background-color: #F8F8F8;
+
+    --primary-text-color: #1E1E1E;
+    --secoundary-text-color: #ffffff;
+    --third-text-color: #4B4B4B;
+    --fourth-text-color: #EEBEBE;
+
+    --overlay-element-color: -------;
+    --overlay-element-color-alpha: -------;
+    --overlay-element-opacity: -------;
+
+    --border-color: #D5D5D5;
+
+    --input-color: #FFFCEA;
+    --button-color: #3575D6;
+
+    --footer-color: #111823;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+    font-display: optional;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secoundary-text-color);
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden-element {
+    display: none;
+}
+
+input {
+    width: 450px;
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-display: optional;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--input-color);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.input-container {
+    width: 450px;
+    height: 60px;
+}
+
+textarea {
+    width: 450px;
+    height: 185px;
+    font-family: 'Montserrat', sans-serif;
+    font-display: optional;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--input-color);
+    resize: none;
+    padding: 20px;
+}
+
+button {
+    width: 450px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-radius: 15px;
+    background-color: var(--button-color);
+    border: 0px;
+}
+
+.button--below {
+    margin-top: 50px;
+}
+
+/*==========================================================*/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/***************VI BRUGER ROOTKIT TIL FARVER*****************/
+/***************SNAK MED ARTON, HVIS I TVIVL*****************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/*==========================================================*/
+
+
+
+/*==========================================================*/
+/**************************MENU******************************/
+/*==========================================================*/
+
+nav {
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav__center {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav ul li {
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.li--small {
+    width: 100px;
+}
+
+nav ul li.bigger {
+    width: 125px;
+}
+
+nav ul li:last-child {
+    margin-right: -12px
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #BCBCBC;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+/*==========================================================*/
+/************************GENERAL*****************************/
+/*==========================================================*/
+
+.red {
+    color: var(--secoundary-color);
+}
+
+h1 {
+    font-size: 86px;
+    color: var(--primary-text-color);
+}
+
+h2 {
+    font-size: 47px;
+    color: var(--primary-text-color);
+}
+
+h3 {
+    font-size: 36px;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-size: 20px;
+    color: var(--third-text-color);
+}
+
+header {
+    width: 100%;
+    height: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    width: 580px;
+    height: 330px;
+}
+
+/* .header-text h1  {
+
+} */
+
+.header-text p {
+    font-size: 32px;
+    color: var(--third-text-color);
+    margin-top: 30px;
+}
+
+.video-box {
+    width: 640px;
+    height: 360px;
+    background-color: var(--third-text-color);
+}
+
+/*========================================================*/
+/*==========================Body==========================*/
+/*========================================================*/
+
+
+/*==========================Body==========================*/
+/*========================================================*/
+
+
+/*===========Module===========*/
+/*============================*/
+
+.module__box {
+    width: 400px;
+    height: 425px;
+    background-color: var(--main-background-color);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    border-radius: 10px;
+    padding: 30px
+}
+
+.module__box h3 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.module__box input {
+    width: 100%;
+}
+
+.module__box .input-container {
+    width: 100%;
+    position: relative;
+}
+
+.module__box .input-container p {
+    font-size: 16px;
+    color: #7A7A7A;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.module__box button {
+    width: 100%;
+}
+
+.module__box--large {
+    width: 100%;
+}
+
+.module__box--placement1 {
+    margin-top: -185px;
+}
+
+.module__box--placement2 {
+    margin-top: -347px;
+}
+
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.toggle {
+    width: 100%;
+    max-width: 340px;
+    height: 35px;
+    border: 2px solid var(--secoundary-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.toggle__option {
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--secoundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.toggle__option.active {
+    color: var(--secoundary-text-color);
+    background-color: var(--secoundary-color);
+}
+
+/*============Hvem============*/
+/*============================*/
+
+
+.introduction {
+    width: 100%;
+    height: 480px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+}
+
+.introduction__centered {
+    width: 1300px;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.introduction__text {
+    width: 795px;
+    height: 290px;
+}
+
+.introduction__text h2 {
+    margin-bottom: 30px;
+}
+
+.introduction__text p {
+    margin-bottom: 15px;
+}
+
+/*============Hvad============*/
+/*============================*/
+
+.what-we-do {
+    width: 100%;
+    height: 750px;
+    background-color: var(--secoundary-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-do__centered {
+    width: 1300px;
+    height: auto;
+}
+
+.what-we-do h2 {
+    color: var(--secoundary-text-color);
+}
+
+.what-we-do__points {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+
+.points__box {
+    width: 347px;
+    height: 330px;
+}
+
+.what-we-do__points .points__box h3 {
+    font-size: 24px;
+    color: var(--secoundary-text-color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.what-we-do__points .points__box p {
+    font-size: 18px;
+    color: var(--fourth-text-color);
+    margin-bottom: 20px;
+}
+
+/*============Hvor============*/
+/*============================*/
+
+.what-we-give {
+    width: 100%;
+    height: 1160px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-we-give__centered {
+    width: 1300px;
+    height: auto;
+}
+
+.what-we-give__centered {
+    width: 1300px;
+    height: auto;
+}
+
+.what-we-give__content {
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-we-give__content h2 {
+    margin-top: 130px;
+}
+
+.what-we-give__content p {
+    margin-bottom: 50px;
+}
+
+.what-we-give__carousel {
+    width: 100%;
+    height: 360px;
+    display: flex;
+}
+
+.what-we-give__carousel .image__container {
+    width: 615px;
+    height: 360px;
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    margin-right: 30px;
+}
+
+/*============Hvem============*/
+/*============================*/
+
+.donaters {
+    width: 100%;
+    height: 465px;
+    background-color: var(--secoundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donaters__centered {
+    width: 1300px;
+    height: auto;
+}
+
+.donaters__centered h2 {
+    color: var(--secoundary-text-color);
+}
+
+.donaters__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+.donater {
+    width: 232px;
+    height: 232px;
+    background-color: #960303;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.donater:last-child {
+    margin-right: 0px;
+}
+
+.donater__logo {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+}
+
+.donater__amount {
+    width: 205px;
+    height: 65px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--main-background-color);
+    background-color: #C50000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -15px;
+}
+
+/*==========Kontakt===========*/
+/*============================*/
+
+.contact {
+    width: 100%;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact__center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__center form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*==========Partners==========*/
+/*============================*/
+
+.partners {
+    width: 100%;
+    height: 210px;
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+}
+
+.partners__center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partnere__logo {
+    width: 195px;
+    height: 85px;
+    background-color: black;
+}
+
+/*===========Footer===========*/
+/*============================*/
+
+footer {
+    width: 100%;
+    height: 350px;
+    color: var(--secoundary-text-color);
+    background-color: var(--footer-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_center {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__box {
+    width: 305px;
+    height: auto;
+}
+
+.footer__box h3 {
+    font-size: 16px;
+    color: var(--secoundary-text-color);
+    margin-bottom: 20px;
+}
+
+.footer__box p {
+    font-size: 16px;
+    color: var(--secoundary-text-color);
+}
