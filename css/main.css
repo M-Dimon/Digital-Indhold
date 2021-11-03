@@ -176,7 +176,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active {
+nav ul li a.active {    
     font-weight: 600;
     color: var(--primary-text-color);
 }
@@ -310,21 +310,21 @@ header {
     -webkit-appearance: none;
     width: 100%;
     height: 15px;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;  
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    padding: 0px;
+    margin: 0px;
+    margin: 25px 0px
 }
   
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
+    width: 15px;
     height: 25px;
-    border-radius: 50%; 
-    background: #04AA6D;
+    border-radius: 50px; 
+    background: var(--secoundary-color);
     cursor: pointer;
 }
   
@@ -360,9 +360,11 @@ header {
     padding: 5px 20px;
 }
 
+.toggle__option:hover,
 .toggle__option.active {
     color: var(--secoundary-text-color);
     background-color: var(--secoundary-color);
+    cursor: pointer;
 }
 
 /*============Hvem============*/
