@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1350px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        padding: 150px;
+    }
+
+    .header__center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-text {
+        margin-bottom: 30px;
+    }
+}
