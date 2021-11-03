@@ -1,5 +1,19 @@
 @media only screen and (max-width: 1350px) {
 
+    body {
+      font-size: 10px;
+    }
+    /* nav */
+    nav {
+      height: auto;
+      padding: 10px;
+    }
+
+  .nav__center {
+    width: 80%;
+  }
+
+    /* header */
     header {
         width: 100%;
         height: auto;
@@ -15,5 +29,21 @@
 
     .header-text {
         margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 44;
+    }
+
+    h2 {
+      font-size: 24;
+    }
+
+    h3 {
+      font-size: 18;
+    }
+
+    p {
+      font-size: 10;
     }
 }
