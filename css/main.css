@@ -563,7 +563,10 @@ header {
 .donater__logo {
     width: 100px;
     height: 50px;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .donater__amount {
@@ -634,7 +637,12 @@ header {
 .partnere__logo {
     width: 195px;
     height: 85px;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.partnere__logo--sdu {
+    margin-top: 15px;
 }
 
 /*===========Footer===========*/
