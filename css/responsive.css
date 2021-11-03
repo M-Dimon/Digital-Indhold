@@ -31,6 +31,14 @@
         margin-bottom: 30px;
     }
 
+    .header-text h1 {
+      font-size: 50px;
+    }
+
+    .header-text p {
+      font-size: 24px;
+    }
+
     h1 {
       font-size: 44;
     }
@@ -45,5 +53,87 @@
 
     p {
       font-size: 10;
+    }
+
+    /* body */
+    /* section 1 */
+    .module__box {
+      width: 280px;
+      height: 300px;
+      padding: 20px;
+    }
+
+    .module__box h3 {
+      font-size: 24px;
+    }
+
+    .module__box .input-container p {
+      font-size: 10px;
+    }
+
+    .module__box div {
+      font-size: 10px;
+    }
+
+    input {
+      width: 350px;
+      height: 40px;
+    }
+
+    .input-container {
+      width: 350px;
+      height: 40px;
+    }
+
+    button {
+      width: 350px;
+      height: 35px;
+      font-size: 14px;
+    }
+
+    .button--below {
+      margin-top: 15px;
+    }
+
+    .introduction {
+      height: 400px;
+    }
+
+    .introduction__centered {
+      width: 800px;
+      height: 400px;
+    }
+
+    .introduction__text h2 {
+      font-size: 26px;
+    }
+
+    .introduction__text p {
+      font-size: 14px;
+    }
+/* section 2 */
+    .what-we-do__centered {
+      width: 800px;
+      height: 400px;
+    }
+    .what-we-do {
+      height: 600px;
+    }
+
+    .what-we-do h2 {
+      font-size: 26px;
+    }
+
+    .points__box {
+        width: 300px;
+        height: 330px;
+    }
+
+
+    .what-we-do__points .points__box h3{
+      font-size: 20px;
+    }
+    .what-we-do__points .points__box p{
+      font-size: 14px;
     }
 }
