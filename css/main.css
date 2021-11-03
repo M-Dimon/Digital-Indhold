@@ -207,6 +207,7 @@ h3 {
 p {
     font-size: 20px;
     color: var(--third-text-color);
+    line-height: 25px;
 }
 
 header {
@@ -229,14 +230,15 @@ header {
     height: 330px;
 }
 
-/* .header-text h1  {
-    
-} */
+.header-text h1  {
+
+}
 
 .header-text p {
     font-size: 32px;
+    line-height: 40px;
     color: var(--third-text-color);
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .video-box {
@@ -302,7 +304,16 @@ header {
 }
 
 .module__box--placement2 {
+    height: auto;
     margin-top: -347px;
+}
+
+.module__box--placement2 h3 {
+    margin-bottom: 10px;
+}
+
+.module__box--placement2 p {
+    margin-bottom: 50px;
 }
   
   /* The slider itself */
@@ -479,6 +490,7 @@ header {
 
 .what-we-give__content h2 {
     margin-top: 130px;
+    margin-bottom: 10px;
 }
 
 .what-we-give__content p {
