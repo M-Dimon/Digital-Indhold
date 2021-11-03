@@ -56,7 +56,7 @@
     }
 
     /* body */
-    /* section 1 */
+    /* section 1 - Hvem er vi + Lille søtte boks */
     .module__box--placement1 {
       width: 280px;
       height: 300px;
@@ -116,7 +116,7 @@
     .introduction__text p {
       font-size: 14px;
     }
-/* section 2 */
+/* section 2 - Hvad gør vi */
     .what-we-do__centered {
       width: 800px;
       height: 400px;
@@ -140,12 +140,12 @@
     .what-we-do__points .points__box p{
       font-size: 14px;
     }
-/* Section 3 */
+/* section 3 - Stor støtte boks */
     .module__box--placement2 {
       width: 800px;
       height: 360px;
       padding: 20px;
-      
+
     }
 
     .module__box--placement2 h3 {
@@ -182,4 +182,7 @@
     .module__box--placement2 .button--below {
       margin-top: 15px;
     }
+
+/* section 4 - Tidligere bidrag */
+
 }
