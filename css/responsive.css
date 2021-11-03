@@ -75,14 +75,18 @@
       font-size: 10px;
     }
 
-    input {
-      width: 350px;
+    .module__box--placement1 input {
+      width: 200px;
       height: 40px;
     }
 
-    .input-container {
-      width: 350px;
+    .module__box--placement1 .input-container {
+      width: 200px;
       height: 40px;
+    }
+
+    .module__box--placement1 .slider {
+      height: 10px;
     }
 
     button {
