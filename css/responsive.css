@@ -144,6 +144,10 @@
     width: 245px;
   }
   
+  .logo {
+    margin-left: 50px;
+  }
+
 }
 
 @media only screen and (max-width: 1150px) {
@@ -192,6 +196,10 @@
     margin-left: 20px;
     margin-bottom: 50px;
   }
+
+  .logo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -218,38 +226,25 @@
   }
 }
 
+@media only screen and (max-width: 765px) { 
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li:nth-child(2) {
+    width: 110px;
+  }
+
+  nav ul li:nth-child(4) {
+    width: 105px;
+  }
+
+}
+
 @media only screen and (max-width: 650px) { 
 
 }
 
-/* section 2 - Hvad gør vi */
-    /* .what-we-do__centered {
-      width: 800px;
-      height: 400px;
-    }
-    .what-we-do {
-      height: 550px;
-    }
-
-    .what-we-do h2 {
-      font-size: 26px;
-    }
-
-    .points__box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 240px;
-        height: 330px;
-    }
-
-    .what-we-do__points .points__box h3{
-      font-size: 20px;
-    }
-    .what-we-do__points .points__box p{
-      font-size: 14px;
-    } */
 /* section 3 - Stor støtte boks */
     /* .module__box--placement2 {
       display: flex;
