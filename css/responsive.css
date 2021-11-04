@@ -181,8 +181,19 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
+  .what-we-do__points {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .points__box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) { 
+  
 }
 
 /* section 2 - Hvad gør vi */
