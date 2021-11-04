@@ -65,6 +65,10 @@
       margin-top: -90px;
   }
 
+  .module__box--placement2 {
+    margin-top: -90px;
+  }
+
   .module__box {
     width: 100%;
   }
@@ -157,6 +161,28 @@
     margin-right: 30px;
     margin-bottom: 50px;
   }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .partners {
+    height: auto;
+    padding: 50px;
+  }
+
+  .partners__center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .partnere__logo {
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
 }
 
 /* section 2 - Hvad gør vi */
