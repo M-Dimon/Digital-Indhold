@@ -672,9 +672,9 @@ footer {
 
 .footer__box img {
   border: 2px solid #ffffff;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+  border-radius: 2px;
+  padding: 4px;
+  width: 100px;
 }
 
 
