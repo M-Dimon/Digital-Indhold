@@ -93,6 +93,11 @@ button {
     border: 0px;
 }
 
+button:hover {
+    background-color: #2258a8;
+    cursor: pointer;
+}
+
 .button--below {
     margin-top: 50px;
 }
