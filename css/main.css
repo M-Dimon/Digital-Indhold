@@ -670,20 +670,14 @@ footer {
     align-items: center;
 }
 
-img {
-  border: 1px solid #ffffff;
+.footer__box img {
+  border: 2px solid #ffffff;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
 }
 
-<<<<<<< HEAD
-<img src="insta.png" alt="">
-<img src="link.png" alt="">
 
-
-=======
->>>>>>> de83731b8de7213bacbd93800028c59ea83a2784
 .footer_center {
     width: 1300px;
     height: auto;
