@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script type="module" src="js/donatebox.js" defer></script>
+    <script type="module" src="js/donaterlist.js" defer></script>
 </head>
 <body>
     <nav>
@@ -145,28 +146,7 @@
         <section class="donaters">
             <div class="donaters__centered">
                 <h2>Vores generiøse støttere</h2>
-                <div class="donaters__list">
-                    <div class="donater">
-                        <div class="donater__logo"> <img src="images/donater_nordea.svg" alt=""> </div>
-                        <div class="donater__amount">500.000 DKK</div>
-                    </div>
-                    <div class="donater">
-                        <div class="donater__logo"> <img src="images/donater_alka.svg" alt=""> </div>
-                        <div class="donater__amount">250.000 DKK</div>
-                    </div>
-                    <div class="donater">
-                        <div class="donater__logo"> <img src="images/donater_if.svg" alt=""> </div>
-                        <div class="donater__amount">110.000 DKK</div>
-                    </div>
-                    <div class="donater">
-                        <div class="donater__logo"> <img src="images/donater_tryg.svg" alt=""> </div>
-                        <div class="donater__amount">60.000 DKK</div>
-                    </div>
-                    <div class="donater">
-                        <div class="donater__logo"> <img src="images/donater_andershenriksen.svg" alt=""> </div>
-                        <div class="donater__amount">20.000 DKK</div>
-                    </div>
-                </div>
+                <div id="donaters__list" class="donaters__list"></div>
             </div>
         </section>
         <section class="contact">
