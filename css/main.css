@@ -677,6 +677,11 @@ footer {
   width: 100px;
 }
 
+.odense img{
+  border: 0px;
+  width:200px;
+  height: 200px;
+}
 
 .footer_center {
     width: 1300px;
