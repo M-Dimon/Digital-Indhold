@@ -1,147 +1,256 @@
+/* Tablet Responsiv Design */
 @media only screen and (max-width: 1350px) {
 
-    body {
-      font-size: 10px;
-    }
-    /* nav */
-    nav {
-      height: auto;
-      padding: 10px;
-    }
-
-  .nav__center {
-    width: 80%;
+  h1 {
+    font-size: 76px;
   }
 
-    /* header */
-    header {
-        width: 100%;
-        height: auto;
-        padding: 150px;
-    }
+  h2 {
+      font-size: 37px;
+  }
 
-    .header__center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header-text {
-        margin-bottom: 30px;
-    }
-
-    .header-text h1 {
-      font-size: 50px;
-    }
-
-    .header-text p {
-      font-size: 24px;
-    }
-
-    h1 {
-      font-size: 44;
-    }
-
-    h2 {
-      font-size: 24;
-    }
-
-    h3 {
-      font-size: 18;
-    }
-
-    p {
-      font-size: 10;
-    }
-
-    /* body */
-    /* section 1 - Hvem er vi + Lille søtte boks */
-    .module__box--placement1 {
-      width: 280px;
-      height: 300px;
-      padding: 20px;
-    }
-
-    .module__box--placement1 h3 {
-      font-size: 24px;
-    }
-
-    .module__box--placement1 .input-container p {
-      font-size: 10px;
-    }
-
-    .module__box--placement1 div {
-      font-size: 10px;
-    }
-
-    .module__box--placement1 input {
-      width: 200px;
-      height: 40px;
-    }
-
-    .module__box--placement1 .input-container {
-      width: 200px;
-      height: 40px;
-    }
-
-    .module__box--placement1 .slider {
-      height: 10px;
-    }
-
-    .module__box--placement1 button {
-      height: 35px;
-      font-size: 14px;
-    }
-
-    .module__box--placement1 .button--below {
-      margin-top: 15px;
-    }
-
-    .introduction {
-      height: 400px;
-    }
-
-    .introduction__centered {
-      width: 800px;
-      height: 400px;
-    }
-    .introduction__text {
-        width: 500px;
-    }
-    .introduction__text h2 {
+  h3 {
       font-size: 26px;
-    }
+  }
 
-    .introduction__text p {
-      font-size: 14px;
-    }
-/* section 2 - Hvad gør vi */
-    .what-we-do__centered {
-      width: 800px;
-      height: 400px;
-    }
-    .what-we-do {
-      height: 550px;
-    }
+  p {
+      font-size: 16px;
+      line-height: 20px;
+  }
 
-    .what-we-do h2 {
-      font-size: 26px;
-    }
+  .nav__center {
+    width: 100%;
+  }
 
-    .points__box {
-        width: 240px;
-        height: 330px;
-    }
+  nav ul li:last-child {
+    margin-right: 0px;
+  }
 
-    .what-we-do__points .points__box h3{
-      font-size: 20px;
-    }
-    .what-we-do__points .points__box p{
-      font-size: 14px;
-    }
+  header {
+    width: 100%;
+    height: auto;
+    padding: 150px;
+    padding-bottom: 190px;
+  }
+
+  .header__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__text {
+    width: 640px;
+    margin-bottom: 100px;
+  }
+
+  .introduction {
+    height: auto;
+  }
+
+  .introduction__centered {
+    width: auto;
+    height: auto;
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+
+  .introduction__text {
+    width: auto;
+    height: auto;
+  }
+
+  .module__box--placement1 {
+      margin-top: -90px;
+  }
+
+  .module__box--placement2 {
+    margin-top: -90px;
+  }
+
+  .module__box {
+    width: 100%;
+  }
+
+  .introduction__text {
+    padding: 100px 0px 50px 0px;
+  }
+
+  
+  .what-we-do {
+    height: auto;
+    padding: 100px 50px;
+  }
+
+  .what-we-do__centered {
+    width: 100%;
+    height: auto;
+  }
+
+  .what-we-do__points {
+    margin-bottom: 0px;
+  }
+
+  .points__box {
+    width: 235px;
+    height: auto;
+  }
+
+  .what-we-give {
+    height: auto;
+  }
+
+  .what-we-give__centered {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .what-we-give__content {
+    width: 100%;
+    height: auto;
+  }
+
+  .donaters__centered {
+    width: auto;
+  }
+  
+  .donater {
+    width: 180px;
+    height: 180px;
+  }
+
+  .donater__amount {
+    width: 145px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .contact__center {
+    width: 100%;
+  }
+
+  .partners__center {
+    width: 100%;
+    padding: 0px 50px;
+  }
+
+  .footer_center {
+    width: 100%;
+    padding: 50px ;
+  }
+
+  .footer__box {
+    width: 245px;
+  }
+  
+  .logo {
+    margin-left: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+  .donaters {
+    height: auto;
+    padding: 50px;
+  }
+
+  .donaters__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .donater {
+    margin: 0px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer__box {
+    width: 210px;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .partners {
+    height: auto;
+    padding: 50px;
+  }
+
+  .partners__center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .partnere__logo {
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .what-we-do__points {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .points__box {
+    width: 100%;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer_center {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .footer__box {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 765px) { 
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li:nth-child(2) {
+    width: 110px;
+  }
+
+  nav ul li:nth-child(4) {
+    width: 105px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) { 
+
+}
+
 /* section 3 - Stor støtte boks */
-    .module__box--placement2 {
+    /* .module__box--placement2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
       width: 800px;
       height: 360px;
       padding: 20px;
@@ -181,8 +290,384 @@
 
     .module__box--placement2 .button--below {
       margin-top: 15px;
-    }
+    } */
 
 /* section 4 - Tidligere bidrag */
+    /* .what-we-give {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
 
-}
+    .what-we-give__content h2 {
+      font-size: 26px;
+    }
+
+    .what-we-give__content p {
+      font-size: 14px;
+    }
+
+    .what-we-give__carousel .image__container {
+      width: 500px;
+      height: 300px;
+    } */
+
+/* section 5 - generiøse støttere */
+    /* .donators {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .donaters__centered h2 {
+      font-size: 26px;
+    }
+
+    .donater {
+      width: 180px;
+      height: 180px;
+    }
+
+    .donater__amount {
+      height: 55px;
+      width: 155px;
+      font-size: 16px;
+    } */
+
+/* Kontakt form */
+    /* .contact h2 {
+      font-size: 26px;
+    }
+
+    input {
+      width: 450px;
+      height: 30px;
+    }
+
+    button {
+      width: 450px;
+      height: 40px;
+      font-size: 20px;
+    } */
+/* Partnere */
+    /* .partners {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    .partners__center {
+      width: 1000px;
+    } */
+
+/* Footer */
+    /* footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .footer_center {
+      width: 1000px;
+    }
+
+    .footer__box h3 {
+      font-size: 24px;
+    }
+
+    .footer__box p {
+      font-size: 14px;
+    }
+} */
+/**/
+/* Mobil Responsiv Design */
+/* @media only screen and (max-width: 400px) { */
+
+      /* body {
+        font-size: 10px;
+      } */
+      /* nav */
+      /* nav {
+        height: auto;
+        padding: 10px;
+      }
+
+      .nav__center {
+      width: 80%;
+      } */
+
+  /* header */
+      /* header {
+          width: 100%;
+          height: auto;
+          padding: 150px;
+      }
+
+      .header__center {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .header-text {
+          margin-bottom: 30px;
+      }
+
+      .header-text h1 {
+        font-size: 50px;
+      }
+
+      .header-text p {
+        font-size: 24px;
+      }
+
+      h1 {
+        font-size: 44;
+      }
+
+      h2 {
+        font-size: 24;
+      }
+
+      h3 {
+        font-size: 18;
+      }
+
+      p {
+        font-size: 10;
+      } */
+
+      /* body */
+      /* section 1 - Hvem er vi + Lille søtte boks */
+      /* .module__box--placement1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 280px;
+        height: 300px;
+        padding: 20px;
+      }
+
+      .module__box--placement1 h3 {
+        font-size: 24px;
+      }
+
+      .module__box--placement1 .input-container p {
+        font-size: 10px;
+      }
+
+      .module__box--placement1 div {
+        font-size: 10px;
+      }
+
+      .module__box--placement1 input {
+        width: 240px;
+        height: 40px;
+      }
+
+      .module__box--placement1 .input-container {
+        width: 200px;
+        height: 40px;
+      }
+
+      .module__box--placement1 .slider {
+        height: 10px;
+      }
+
+      .module__box--placement1 button {
+        height: 35px;
+        font-size: 14px;
+      }
+
+      .module__box--placement1 .button--below {
+        margin-top: 15px;
+      }
+
+      .introduction {
+        height: 400px;
+      }
+
+      .introduction__centered {
+        width: 380px;
+        height: 400px;
+      }
+      .introduction__text {
+          width: 500px;
+      }
+      .introduction__text h2 {
+        font-size: 26px;
+      }
+
+      .introduction__text p {
+        font-size: 14px;
+      } */
+  /* section 2 - Hvad gør vi */
+      /* .what-we-do__centered {
+        width: 380px;
+        height: 380px;
+      }
+      .what-we-do {
+        height: 550px;
+      }
+
+      .what-we-do h2 {
+        font-size: 26px;
+      }
+
+      .points__box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          width: 240px;
+          height: 330px;
+      }
+
+      .what-we-do__points .points__box h3{
+        font-size: 22px;
+      }
+      .what-we-do__points .points__box p{
+        font-size: 12px;
+      } */
+  /* section 3 - Stor støtte boks */
+      /* .module__box--placement2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 380px;
+        height: 360px;
+        padding: 20px;
+
+      }
+
+      .module__box--placement2 h3 {
+        font-size: 22px;
+      }
+
+      .module__box--placement2 .input-container p {
+        font-size: 10px;
+      }
+
+      .module__box--placement2 div {
+        font-size: 8px;
+      }
+
+      .module__box--placement2 input {
+        width: 350px;
+        height: 30px;
+      }
+
+      .module__box--placement2 .input-container {
+        width: 350px;
+        height: 30px;
+      }
+
+      .module__box--placement2 .slider {
+        height: 8px;
+      }
+
+      .module__box--placement2 button {
+        height: 35px;
+        font-size: 14px;
+      }
+
+      .module__box--placement2 .button--below {
+        margin-top: 15px;
+      } */
+
+  /* section 4 - Tidligere bidrag */
+      /* .what-we-give {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .what-we-give__content h2 {
+        font-size: 24px;
+      }
+
+      .what-we-give__content p {
+        font-size: 12px;
+      }
+
+      .what-we-give__carousel .image__container {
+        width: 250px;
+        height: 150px;
+      } */
+
+  /* section 5 - generiøse støttere */
+      /* .donaters {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .donaters__centered h2 {
+        font-size: 24px;
+      }
+
+      .donater {
+        width: 90px;
+        height: 90px;
+      }
+
+      .donater__amount {
+        height: 30px;
+        width: 80px;
+        font-size: 12px;
+      }
+
+      .donater__logo img {
+        width: 50px;
+        height: 50px;
+      } */
+
+  /* Kontakt form */
+      /* .contact h2 {
+        font-size: 24px;
+      }
+
+      input {
+        width: 350px;
+        height: 30px;
+      }
+
+      button {
+        width: 350px;
+        height: 30px;
+        font-size: 15px;
+      } */
+  /* Partnere */
+      /* .partners__center {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+      } */
+
+  /* Footer */
+      /* footer {
+        height: 200px;
+      }
+
+      .footer_center {
+        width: 100%;
+      }
+
+      .footer__box h3 {
+        font-size: 22px;
+      }
+
+      .footer__box p {
+        font-size: 12px;
+      } */
+/* } */
