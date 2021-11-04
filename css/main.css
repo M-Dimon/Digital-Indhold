@@ -7,7 +7,7 @@
     --primary-color: #ffffff;
     --secoundary-color: #A80000;
     --third-color: #F8F8F8;
-    
+
     --main-background-color: #ffffff;
     --secoundary-background-color: #870000;
     --tritiary-background-color: #F8F8F8;
@@ -16,13 +16,13 @@
     --secoundary-text-color: #ffffff;
     --third-text-color: #4B4B4B;
     --fourth-text-color: #EEBEBE;
-    
+
     --overlay-element-color: -------;
     --overlay-element-color-alpha: -------;
     --overlay-element-opacity: -------;
-    
+
     --border-color: #D5D5D5;
-    
+
     --input-color: #FFFCEA;
     --button-color: #3575D6;
 
@@ -149,7 +149,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    
+
 }
 
 nav ul li {
@@ -181,7 +181,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active {    
+nav ul li a.active {
     font-weight: 600;
     color: var(--primary-text-color);
 }
@@ -275,7 +275,7 @@ header {
     width: 400px;
     height: auto;
     background-color: var(--main-background-color);
-    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16); 
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
     border-radius: 10px;
     padding: 30px
@@ -331,7 +331,7 @@ header {
 .module__box--placement2 p {
     margin-bottom: 50px;
 }
-  
+
   /* The slider itself */
 .slider {
     -webkit-appearance: none;
@@ -339,22 +339,22 @@ header {
     height: 15px;
     background-color: var(--main-background-color);
     border: 1px solid var(--border-color);
-    border-radius: 5px;  
+    border-radius: 5px;
     padding: 0px;
     margin: 0px;
     margin: 25px 0px
 }
-  
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 15px;
     height: 25px;
-    border-radius: 50px; 
+    border-radius: 50px;
     background: var(--secoundary-color);
     cursor: pointer;
 }
-  
+
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -578,7 +578,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .donater__amount {
@@ -669,6 +669,16 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+<img src="insta.png" alt="">
+
+
 
 .footer_center {
     width: 1300px;
