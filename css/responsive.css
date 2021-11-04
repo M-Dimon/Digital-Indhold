@@ -137,8 +137,13 @@
 
   .footer_center {
     width: 100%;
+    padding: 50px ;
   }
 
+  .footer__box {
+    width: 245px;
+  }
+  
 }
 
 @media only screen and (max-width: 1150px) {
@@ -160,6 +165,14 @@
     margin: 0px;
     margin-right: 30px;
     margin-bottom: 50px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer__box {
+    width: 210px;
   }
 
 }
@@ -190,10 +203,23 @@
   .points__box {
     width: 100%;
   }
+
+  footer {
+    height: auto;
+  }
+
+  .footer_center {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .footer__box {
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 650px) { 
-  
+
 }
 
 /* section 2 - Hvad gør vi */
