@@ -711,13 +711,6 @@ footer {
     align-items: center;
 }
 
-.footer__box img {
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  padding: 4px;
-  width: 100px;
-}
-
 .odense img{
   border: 0px;
   width:280px;
@@ -745,4 +738,28 @@ footer {
 .footer__box p {
     font-size: 16px;
     color: var(--secoundary-text-color);
+}
+
+.social-box {
+    display: flex;
+}
+
+.social-box a {
+    text-decoration: none;
+}
+
+.social-box a:hover .social-box__media p {
+    color: var(--button-color);
+}
+
+.social-box__media {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.social-box__media img {
+    width: 30px;
+    margin-right: 5px;
 }
