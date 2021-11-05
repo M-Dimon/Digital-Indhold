@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // var button = document.getElementById("my-form-button");
   var status = document.getElementById("status");
 
-  // Success funktion efter formen er submitted
+  // Success function after  the form is submitted
 
   function success() {
     form.reset();
