@@ -1,102 +1,92 @@
-tml, body {
-  color: #333;
-  font-size: 16px;
-  line-height: 20px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-  margin: 20px;
+  font-family: "Montserrat";
 }
-
-h1 {
-  line-height: 1.2;
-  margin-bottom: 35px;
-  text-align: center;
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .container {
-  margin: 0 auto 35px;
-  max-width: 450px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
-
-/* Actual code example */
-
-$primary-color: #b11adc;
-$animation-duration: 0.4s;
-
-@mixin label-active() {
-  font-size: 0.75rem;
-  transform: translateY(-14px);
-}
-
-.form-field {
-  display: block;
-  margin-bottom: 16px;
-
-  &--is-active {
-    .form-field__control {
-      &::after {
-        border-bottom: 2px solid $primary-color;
-        transform: scaleX(150);
-      }
-    }
-    .form-field__label {
-      color: $primary-color;
-      @include label-active();
-    }
-  }
-  &--is-filled {
-    .form-field__label {
-      @include label-active();
-    }
-  }
-}
-.form-field__label {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: normal;
-  left: 0;
-  margin: 0;
-  padding: 18px 12px 0 ;
-  position: absolute;
-  top: 0;
-  transition: all $animation-duration;
+.form-group {
   width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
 }
-.form-field__control {
-  background: #eee;
-  border-radius: 8px 8px 0 0;
-  overflow: hidden;
-  position: relative;
+.form-group input,
+.form-group textarea {
   width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
 
-  &::after {
-    border-bottom: 2px solid $primary-color;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    transform: scaleX(0);
-    transition: all $animation-duration;
-    width: 1%;
-  }
+textarea {
+  resize: vertical;
 }
-.form-field__input,
-.form-field__textarea {
-  appearance: none;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #999;
-  color: #333;
-  display: block;
-  font-size: 1.2rem;
-  margin-top: 24px;
-  outline: 0;
-  padding: 0 12px 10px 12px;
+button[type="submit"] {
   width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(27, 166, 247);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
 }
-.form-field__textarea {
-  height: 150px;
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
