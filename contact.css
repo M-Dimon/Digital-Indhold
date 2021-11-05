@@ -5,7 +5,7 @@
     height: 150px;
     margin: 10px;
     padding: 25px;
-    caret-color: black;
+    background-color: black;
 }
 
 .boxedgrey {
