@@ -19,6 +19,7 @@
     <script type="module" src="js/donatebox.js" defer></script>
     <script type="module" src="js/donaterlist.js" defer></script>
     <script type="module" src="js/overlay.js" defer></script>
+    <script type="module" src="js/video-overlay.js" defer></script>
 </head>
 <body>
 <!-- Her er overlay -->
@@ -478,7 +479,7 @@
         </div>
     </nav>
     <header>
-        <div class="header__video-overlay">
+        <div id="video-overlay" class="header__video-overlay">
             <video class="header__video-overlay__video" src=""></video>
         </div>
         <div class="header__center">
@@ -487,7 +488,7 @@
                 <p>Som virksomhed eller privatperson, kan du gøre en stor forskel.</p>
             </div>
 
-            <div class="video-box">
+            <div id="lille-video" class="video-box">
                 <video class="video-box__video" src=""></video>
                 <div class="video-box__background"></div>
             </div>
