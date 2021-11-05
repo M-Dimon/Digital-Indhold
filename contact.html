@@ -4,39 +4,32 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-  <h1><Kontakt os</h1>
-    <section>
-      <div class="container">
-        <form action="https://formspree.io/mbjzbwaj" method="POST" id="my-form">
 
-          <div class="form-group">
-            <label for="firstName"> First Name</label>
-            <input type="text" id="firstName" name="firstName">
-          </div>
+  </head>
+  <body>
 
-          <div class="form-group">
-            <label for="latsName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
-          </div>
+    <div class="boxedblack">
+    </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-          </div>
+    <div class="boxedgrey">
+    </div>
 
-          <div class="form-group">
-            <label for="massage">Message</label>
-            <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-          </div>
+    <p id="demo"></p>
 
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      <div id="status"></div>
-    </section>
+    <script>
+    document.getElementById("boxedblack").addEventListener("click", display);
 
-</body>
+    <script>
+    document.getElementById("boxedgrey").addEventListener("click", display);
 
+    function display() {
+      document.getElementById("boxedblack").display = block();
+    }
+
+    function display2() {
+      document.getElementById("boxedgrey").display = none();
+    }
+
+    </script>
+  </body>
 </html>

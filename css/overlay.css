@@ -1,3 +1,28 @@
+#donate-box-overlay {
+
+}
+
+#donate-box-overlay h1 {
+  font-size: 36px;
+}
+
+#donate-box-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#donate-box-overlay p {
+  font-size: 16px;
+}
+
+#donate-box-overlay .margin-bottom {
+  margin-bottom: 50px;
+}
+
+#donate-box-overlay #privat-enkelt {
+  margin-bottom: 30px;
+}
+
 /* The Modal (background) */
 .overlay {
   display: none; /* Hidden by default */
@@ -17,11 +42,12 @@
 .overlaystart {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
   border: 1px solid #888;
-  width: 350px;
+  width: 555px;
   text-align: center;
+  position: relative;
 }
 
 
@@ -30,6 +56,9 @@
   color: #aaaaaa;
   float: right;
   font-size: 28px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 
 }
 
@@ -46,7 +75,7 @@
 }
 
 /* Actual code example */
-
+/* 
 $primary-color: b11adc;
 $animation-duration: 0.4s;
 
@@ -77,6 +106,7 @@ $animation-duration: 0.4s;
     }
   }
 }
+
 .form-field__label {
   display: block;
   font-size: 1.2rem;
@@ -89,6 +119,7 @@ $animation-duration: 0.4s;
   transition: all $animation-duration;
   width: 100%;
 }
+
 .form-field__control {
   background: #eee;
   border-radius: 8px 8px 0 0;
@@ -110,6 +141,7 @@ $animation-duration: 0.4s;
     width: 1%;
   }
 }
+
 .form-field__input,
 .form-field__textarea {
   appearance: none;
@@ -124,6 +156,7 @@ $animation-duration: 0.4s;
   padding: 0 12px 10px 12px;
   width: 100%;
 }
+
 .form-field__textarea {
   height: 150px;
-}
+} */
