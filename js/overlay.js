@@ -2,7 +2,7 @@
 var modal = document.getElementById("overlay-enkel");
 
 // Knappen der aktivere det første overlay
-var btn = document.getElementById("doner-enkelt");
+var btn = document.getElementById("one-pay");
 
 // knappen der lukker overlayet
 var span = document.getElementsByClassName("close")[0];
@@ -113,7 +113,7 @@ btn6.onclick = function() {
 var modal7 = document.getElementById("overlay-årlig");
 
 // Knappen der aktivere det første overlay
-var btn7 = document.getElementById("doner-årlig");
+var btn7 = document.getElementById("yearly-pay");
 
 // knappen der lukker overlayet
 var span7 = document.getElementsByClassName("close")[7];
