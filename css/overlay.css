@@ -1,0 +1,211 @@
+/* The Modal (background) */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.overlaystart {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 350px;
+  text-align: center;
+}
+
+.overlay-privat {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.overlay-privat {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 350px;
+  text-align: center;
+}
+/* The Modal (background) */
+.overlay-virksomhed {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.overlay-virksomhed {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 350px;
+  text-align: center;
+}
+
+.overlay-betaling-oversigt {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.overlay-betaling-oversigt{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  width: 350px;
+  text-align: center;
+}
+
+button {
+align-content: center;
+background-color: blue;
+color: white;
+width: 200px;
+border-radius: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto 35px;
+  max-width: 450px;
+}
+
+/* Actual code example */
+
+$primary-color: b11adc;
+$animation-duration: 0.4s;
+
+@mixin label-active() {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 16px;
+
+  &--is-active {
+    .form-field__control {
+      &::after {
+        border-bottom: 2px solid $primary-color;
+        transform: scaleX(150);
+      }
+    }
+    .form-field__label {
+      color: $primary-color;
+      @include label-active();
+    }
+  }
+  &--is-filled {
+    .form-field__label {
+      @include label-active();
+    }
+  }
+}
+.form-field__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0 ;
+  position: absolute;
+  top: 0;
+  transition: all $animation-duration;
+  width: 100%;
+}
+.form-field__control {
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    border-bottom: 2px solid $primary-color;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transform: scaleX(0);
+    transition: all $animation-duration;
+    width: 1%;
+  }
+}
+.form-field__input,
+.form-field__textarea {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 100%;
+}
+.form-field__textarea {
+  height: 150px;
+}
