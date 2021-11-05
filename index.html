@@ -8,9 +8,10 @@
     <title>Document</title>
     <meta name="description" CONTENT="">
 
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
     <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,7 +21,451 @@
     <script type="module" src="js/overlay.js" defer></script>
 </head>
 <body>
+<!-- Her er overlay -->
 
+<div>
+  <!-- Vælg om man er privat eller virksomhed på enkelt betaling -->
+  <div id="overlay-enkel" class="overlay">
+    <div class="overlaystart">
+      <span class="close">&times;</span>
+        <h1>Tak fordi du vil støtte retshjælpen</h1>
+        <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
+        <h4>Hvem er du</h4>
+        <button type="button" id="privat-enkelt">Jeg er privat person</button>
+        <button type="button" id="virksomhed-enkelt" name="button-virksomhed">Jeg er en virksomhed</button>
+    </div>
+  </div>
+  <!-- privat person udfyldnings form enkelt betaling-->
+  <div id="privat-form-enkel" class="overlay">
+  <div class="overlaystart">
+   <span class="close">&times;</span>
+     <h1>Dine oplysninger</h1>
+     <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
+     <div class="container">
+      <form novalidate>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="firstname" class="form-field__label">Fornavn</label>
+                <input id="firstname" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="lastname"class="form-field__label">Efternavn</label>
+                <input id="lastname" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="street"class="form-field__label">Adresse</label>
+                <input id="street" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="zip"class="form-field__label">Postnr</label>
+                <input id="zip" type="text" class="form-field__input"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="city"class="form-field__label">By</label>
+                <input id="city" type="text" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="email" class="form-field__label">Email</label>
+                <input id="email" type="email" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-field">
+              <div class="form-field__control">
+                <label for="email" class="form-field__label">Telefon nr</label>
+                <input id="email" type="email" class="form-field__input" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+     <button id="betaling-enkel">Gå til betaling</button>
+   </div>
+   </div>
+   <!-- betalings typer enkelt betaling -->
+   <div id="betal-type-enkel" class="overlay">
+      <div class="overlaystart">
+       <span class="close">&times;</span>
+         <h1>Vælg betalings type</h1>
+         <p>Vælg imellem diverse betalings typer</p>
+         <button type="button" id="mobilepay-enkel">Mobilepay</button>
+         <button type="button" id="kreditkort-enkel" name="button-virksomhed">Kreditkort</button>
+     </div>
+   </div>
+   <!-- mobilepay betaling  -->
+   <div id="mobilepay-betaling-enkel" class="overlay">
+     <div class="overlaystart">
+       <span class="close">&times;</span>
+         <h1>Betal med mobilepay</h1>
+         <p>Blot indtast dit nummer og du vil få en notifikation på din mobil, hvis du er en del af mobilepay.</p>
+         <form class="form" action="index.html" method="post">
+           <input type="text" name="telefonnr" value="Dit telefon nummer">
+         </form>
+         <button type="button" id="betal-mobilepay">Betal med mobilepay</button>
+     </div>
+   </div>
+   <!-- tak for din støtte boks bruges til alle da indhold er universelt-->
+   <div id="tak-støtte" class="overlay">
+     <div class="overlaystart">
+       <span class="close">&times;</span>
+         <h1>Vi sætter stor pris på din støtte!</h1>
+         <p>Din støtte har direkte hjulpet os med at beholde og uddanne en masse dygtige jura studerende, som hver dag hjælper en masse udsatte med at få den nødvendige retshjælp de ar brug for.</p>
+         <button type="button" id="privat">Det var så lidt</button>
+     </div>
+   </div>
+   <!-- kreditkorts betaling enkelt -->
+   <div id="betal-kreditkort-enkelt" class="overlay">
+   <div class="overlaystart">
+    <span class="close">&times;</span>
+      <h1>Betal med kreditkort</h1>
+      <p>Indtast dine kort oplysninger, så vi kan sende dig et engangs beløb på 200 kr</p>
+      <div class="container">
+       <form novalidate>
+         <div class="row">
+           <div class="col-sm">
+             <div class="form-field">
+               <div class="form-field__control">
+                 <label for="firstname" class="form-field__label">Navn</label>
+                 <input id="firstname" type="text" class="form-field__input" />
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm">
+             <div class="form-field">
+               <div class="form-field__control">
+                 <label for="street"class="form-field__label">Kort nummer</label>
+                 <input id="street" type="text" class="form-field__input" />
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm">
+             <div class="form-field">
+               <div class="form-field__control">
+                 <label for="zip"class="form-field__label">Måned</label>
+                 <input id="zip" type="text" class="form-field__input"/>
+               </div>
+             </div>
+           </div>
+           <div class="col-sm">
+             <div class="form-field">
+               <div class="form-field__control">
+                 <label for="city"class="form-field__label">År</label>
+                 <input id="city" type="text" class="form-field__input" />
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-sm">
+             <div class="form-field">
+               <div class="form-field__control">
+                 <label for="email" class="form-field__label">Sikkerheds nummer</label>
+                 <input id="email" type="email" class="form-field__input" />
+               </div>
+             </div>
+           </div>
+         </div>
+       </form>
+     </div>
+      <button id="betal-kreditkort">Betal med kreditkort</button>
+    </div>
+    </div>
+    <!-- Årlig betaling -->
+    <div id="overlay-årlig" class="overlay">
+      <div class="overlaystart">
+        <span class="close">&times;</span>
+          <h1>Tak fordi du vil støtte retshjælpen</h1>
+          <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
+          <h4>Hvem er du</h4>
+          <button type="button" id="privat-årlig">Jeg er privat person</button>
+          <button type="button" id="virksomhed-årlig" name="button-virksomhed">Jeg er en virksomhed</button>
+      </div>
+    </div>
+    <!-- Privat person årlig betaling -->
+    <div id="privat-form-årlig" class="overlay">
+    <div class="overlaystart">
+     <span class="close">&times;</span>
+       <h1>Dine oplysninger</h1>
+       <p>For at tage imod dine betalinger, skal vi bruge nogle oplysninger om dig. Disse oplysninger bliver ikke delt.</p>
+       <div class="container">
+        <form novalidate>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="firstname" class="form-field__label">Fornavn</label>
+                  <input id="firstname" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="lastname"class="form-field__label">Efternavn</label>
+                  <input id="lastname" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="street"class="form-field__label">Adresse</label>
+                  <input id="street" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="zip"class="form-field__label">Postnr</label>
+                  <input id="zip" type="text" class="form-field__input"/>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="city"class="form-field__label">By</label>
+                  <input id="city" type="text" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="email" class="form-field__label">Email</label>
+                  <input id="email" type="email" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <div class="form-field">
+                <div class="form-field__control">
+                  <label for="email" class="form-field__label">Telefon nr</label>
+                  <input id="email" type="email" class="form-field__input" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+       <button id="privat-betaling-årlig">Gå til betaling</button>
+     </div>
+     </div>
+     <!-- Sæt betalingen op overlay -->
+     <div id="betal-kreditkort-årlig" class="overlay">
+     <div class="overlaystart">
+      <span class="close">&times;</span>
+        <h1>Sæt betaling op</h1>
+        <p>Din årlige betaling er lige ved at være sat op, indtast dine informationer og så godkender vi dig inden for kort tid.</p>
+        <div class="container">
+         <form novalidate>
+           <div class="row">
+             <div class="col-sm">
+               <div class="form-field">
+                 <div class="form-field__control">
+                   <label for="firstname" class="form-field__label">Navn</label>
+                   <input id="firstname" type="text" class="form-field__input" />
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm">
+               <div class="form-field">
+                 <div class="form-field__control">
+                   <label for="street"class="form-field__label">Kort nummer</label>
+                   <input id="street" type="text" class="form-field__input" />
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm">
+               <div class="form-field">
+                 <div class="form-field__control">
+                   <label for="zip"class="form-field__label">Måned</label>
+                   <input id="zip" type="text" class="form-field__input"/>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm">
+               <div class="form-field">
+                 <div class="form-field__control">
+                   <label for="city"class="form-field__label">År</label>
+                   <input id="city" type="text" class="form-field__input" />
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm">
+               <div class="form-field">
+                 <div class="form-field__control">
+                   <label for="email" class="form-field__label">Sikkerheds nummer</label>
+                   <input id="email" type="email" class="form-field__input" />
+                 </div>
+               </div>
+             </div>
+           </div>
+         </form>
+       </div>
+        <button id="betal-privat-årlig">Betal og bliv medlem</button>
+      </div>
+      </div>
+      <!-- Virksomheds betalings form for enkel betaling -->
+      <div id="virksomhed-form-enkel" class="overlay">
+      <div class="overlaystart">
+       <span class="close">&times;</span>
+         <h1>Jeres oplysninger</h1>
+         <p>Tusind tak for at donere <b>200 kr</b> til os, i er med til at vores støtteforening kan fortsætte med at give tilbage til vores jura studerende. Udfyld denne formular og vi vil vende tilbage til jer hurtigst muligt. </p>
+         <div class="container">
+          <form novalidate>
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-field">
+                  <div class="form-field__control">
+                    <label for="firstname" class="form-field__label">Virksomhedens navn</label>
+                    <input id="firstname" type="text" class="form-field__input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-field">
+                  <div class="form-field__control">
+                    <label for="firstname" class="form-field__label">CVR</label>
+                    <input id="firstname" type="text" class="form-field__input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-field">
+                  <div class="form-field__control">
+                    <label for="street"class="form-field__label">E-mail</label>
+                    <input id="street" type="text" class="form-field__input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="form-field">
+                  <div class="form-field__control">
+                    <label for="email" class="form-field__label">Telefon nr</label>
+                    <input id="email" type="email" class="form-field__input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+         <button id="virksomhed-betal-enkel">Send formular</button>
+       </div>
+       </div>
+       <!-- Virksomheds betalings form for årlig betaling -->
+       <div id="virksomhed-form-årlig" class="overlay">
+        <div class="overlaystart">
+          <span class="close">&times;</span>
+            <h1>Jeres oplysninger</h1>
+            <p>Tusind tak for at i vil støtte os årligt med <b>200 kr</b>, i er med til at vores støtteforening kan fortsætte med at give tilbage til vores jura studerende. Udfyld denne formular og vi vil vende tilbage til jer hurtigst muligt. </p>
+            <div class="container">
+            <form novalidate>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-field">
+                    <div class="form-field__control">
+                      <label for="firstname" class="form-field__label">Virksomhedens navn</label>
+                      <input id="firstname" type="text" class="form-field__input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-field">
+                    <div class="form-field__control">
+                      <label for="firstname" class="form-field__label">CVR</label>
+                      <input id="firstname" type="text" class="form-field__input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-field">
+                    <div class="form-field__control">
+                      <label for="street"class="form-field__label">E-mail</label>
+                      <input id="street" type="text" class="form-field__input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="form-field">
+                    <div class="form-field__control">
+                      <label for="email" class="form-field__label">Telefon nr</label>
+                      <input id="email" type="email" class="form-field__input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+            <button id="virksomhed-betal-årlig">Send formular</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Her slutter overlay -->
     <nav>
         <div class="nav__center">
         <div class="logo"></div>
@@ -71,448 +516,8 @@
                             <div id="toggle-one" class="toggle__option">Engangsbetaling</div>
                             <div id="toggle-two" class="toggle__option">Årlig betaling</div>
                         </div>
-                        <button id="doner-enkelt" class="button--below">Donér til retshjælpen
-                        </button>
-                        <!-- Vælg om man er privat eller virksomhed på enkelt betaling -->
-                        <div id="overlay-enkel" class="overlay">
-                          <div class="overlaystart">
-                            <span class="close">&times;</span>
-                              <h1>Tak fordi du vil støtte retshjælpen</h1>
-                              <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
-                              <h4>Hvem er du</h4>
-                              <button type="button" id="privat-enkelt">Jeg er privat person</button>
-                              <button type="button" id="virksomhed-enkelt" name="button-virksomhed">Jeg er en virksomhed</button>
-                          </div>
-                        </div>
-                        <!-- privat person udfyldnings form enkelt betaling-->
-                        <div id="privat-form-enkel" class="overlay">
-                        <div class="overlaystart">
-                         <span class="close">&times;</span>
-                           <h1>Dine oplysninger</h1>
-                           <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
-                           <div class="container">
-                            <form novalidate>
-                              <div class="row">
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="firstname" class="form-field__label">Fornavn</label>
-                                      <input id="firstname" type="text" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="lastname"class="form-field__label">Efternavn</label>
-                                      <input id="lastname" type="text" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="street"class="form-field__label">Adresse</label>
-                                      <input id="street" type="text" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="zip"class="form-field__label">Postnr</label>
-                                      <input id="zip" type="text" class="form-field__input"/>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="city"class="form-field__label">By</label>
-                                      <input id="city" type="text" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="email" class="form-field__label">Email</label>
-                                      <input id="email" type="email" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-sm">
-                                  <div class="form-field">
-                                    <div class="form-field__control">
-                                      <label for="email" class="form-field__label">Telefon nr</label>
-                                      <input id="email" type="email" class="form-field__input" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                           <button id="betaling-enkel">Gå til betaling</button>
-                         </div>
-                         </div>
-                         <!-- betalings typer enkelt betaling -->
-                         <div id="betal-type-enkel" class="overlay">
-                            <div class="overlaystart">
-                             <span class="close">&times;</span>
-                               <h1>Vælg betalings type</h1>
-                               <p>Vælg imellem diverse betalings typer</p>
-                               <button type="button" id="mobilepay-enkel">Mobilepay</button>
-                               <button type="button" id="kreditkort-enkel" name="button-virksomhed">Kreditkort</button>
-                           </div>
-                         </div>
-                         <!-- mobilepay betaling  -->
-                         <div id="mobilepay-betaling-enkel" class="overlay">
-                           <div class="overlaystart">
-                             <span class="close">&times;</span>
-                               <h1>Betal med mobilepay</h1>
-                               <p>Blot indtast dit nummer og du vil få en notifikation på din mobil, hvis du er en del af mobilepay.</p>
-                               <form class="form" action="index.html" method="post">
-                                 <input type="text" name="telefonnr" value="Dit telefon nummer">
-                               </form>
-                               <button type="button" id="betal-mobilepay">Betal med mobilepay</button>
-                           </div>
-                         </div>
-                         <!-- tak for din støtte boks bruges til alle da indhold er universelt-->
-                         <div id="tak-støtte" class="overlay">
-                           <div class="overlaystart">
-                             <span class="close">&times;</span>
-                               <h1>Vi sætter stor pris på din støtte!</h1>
-                               <p>Din støtte har direkte hjulpet os med at beholde og uddanne en masse dygtige jura studerende, som hver dag hjælper en masse udsatte med at få den nødvendige retshjælp de ar brug for.</p>
-                               <button type="button" id="privat">Det var så lidt</button>
-                           </div>
-                         </div>
-                         <!-- kreditkorts betaling enkelt -->
-                         <div id="betal-kreditkort-enkelt" class="overlay">
-                         <div class="overlaystart">
-                          <span class="close">&times;</span>
-                            <h1>Betal med kreditkort</h1>
-                            <p>Indtast dine kort oplysninger, så vi kan sende dig et engangs beløb på 200 kr</p>
-                            <div class="container">
-                             <form novalidate>
-                               <div class="row">
-                                 <div class="col-sm">
-                                   <div class="form-field">
-                                     <div class="form-field__control">
-                                       <label for="firstname" class="form-field__label">Navn</label>
-                                       <input id="firstname" type="text" class="form-field__input" />
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                               <div class="row">
-                                 <div class="col-sm">
-                                   <div class="form-field">
-                                     <div class="form-field__control">
-                                       <label for="street"class="form-field__label">Kort nummer</label>
-                                       <input id="street" type="text" class="form-field__input" />
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                               <div class="row">
-                                 <div class="col-sm">
-                                   <div class="form-field">
-                                     <div class="form-field__control">
-                                       <label for="zip"class="form-field__label">Måned</label>
-                                       <input id="zip" type="text" class="form-field__input"/>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 <div class="col-sm">
-                                   <div class="form-field">
-                                     <div class="form-field__control">
-                                       <label for="city"class="form-field__label">År</label>
-                                       <input id="city" type="text" class="form-field__input" />
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                               <div class="row">
-                                 <div class="col-sm">
-                                   <div class="form-field">
-                                     <div class="form-field__control">
-                                       <label for="email" class="form-field__label">Sikkerheds nummer</label>
-                                       <input id="email" type="email" class="form-field__input" />
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                             </form>
-                           </div>
-                            <button id="betal-kreditkort">Betal med kreditkort</button>
-                          </div>
-                          </div>
-                          <!-- Årlig betaling -->
-                          <button id="doner-årlig">Doner til retshjælpen 2</button>
-                          <div id="overlay-årlig" class="overlay">
-                            <div class="overlaystart">
-                              <span class="close">&times;</span>
-                                <h1>Tak fordi du vil støtte retshjælpen</h1>
-                                <p>Før du skal hjælpe os, skal vi bruge nogle informationer fra dig</p>
-                                <h4>Hvem er du</h4>
-                                <button type="button" id="privat-årlig">Jeg er privat person</button>
-                                <button type="button" id="virksomhed-årlig" name="button-virksomhed">Jeg er en virksomhed</button>
-                            </div>
-                          </div>
-                          <!-- Privat person årlig betaling -->
-                          <div id="privat-form-årlig" class="overlay">
-                          <div class="overlaystart">
-                           <span class="close">&times;</span>
-                             <h1>Dine oplysninger</h1>
-                             <p>For at tage imod dine betalinger, skal vi bruge nogle oplysninger om dig. Disse oplysninger bliver ikke delt.</p>
-                             <div class="container">
-                              <form novalidate>
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="firstname" class="form-field__label">Fornavn</label>
-                                        <input id="firstname" type="text" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="lastname"class="form-field__label">Efternavn</label>
-                                        <input id="lastname" type="text" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="street"class="form-field__label">Adresse</label>
-                                        <input id="street" type="text" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="zip"class="form-field__label">Postnr</label>
-                                        <input id="zip" type="text" class="form-field__input"/>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="city"class="form-field__label">By</label>
-                                        <input id="city" type="text" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="email" class="form-field__label">Email</label>
-                                        <input id="email" type="email" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <div class="col-sm">
-                                    <div class="form-field">
-                                      <div class="form-field__control">
-                                        <label for="email" class="form-field__label">Telefon nr</label>
-                                        <input id="email" type="email" class="form-field__input" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                             <button id="privat-betaling-årlig">Gå til betaling</button>
-                           </div>
-                           </div>
-                           <!-- Sæt betalingen op overlay -->
-                           <div id="betal-kreditkort-årlig" class="overlay">
-                           <div class="overlaystart">
-                            <span class="close">&times;</span>
-                              <h1>Sæt betaling op</h1>
-                              <p>Din årlige betaling er lige ved at være sat op, indtast dine informationer og så godkender vi dig inden for kort tid.</p>
-                              <div class="container">
-                               <form novalidate>
-                                 <div class="row">
-                                   <div class="col-sm">
-                                     <div class="form-field">
-                                       <div class="form-field__control">
-                                         <label for="firstname" class="form-field__label">Navn</label>
-                                         <input id="firstname" type="text" class="form-field__input" />
-                                       </div>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 <div class="row">
-                                   <div class="col-sm">
-                                     <div class="form-field">
-                                       <div class="form-field__control">
-                                         <label for="street"class="form-field__label">Kort nummer</label>
-                                         <input id="street" type="text" class="form-field__input" />
-                                       </div>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 <div class="row">
-                                   <div class="col-sm">
-                                     <div class="form-field">
-                                       <div class="form-field__control">
-                                         <label for="zip"class="form-field__label">Måned</label>
-                                         <input id="zip" type="text" class="form-field__input"/>
-                                       </div>
-                                     </div>
-                                   </div>
-                                   <div class="col-sm">
-                                     <div class="form-field">
-                                       <div class="form-field__control">
-                                         <label for="city"class="form-field__label">År</label>
-                                         <input id="city" type="text" class="form-field__input" />
-                                       </div>
-                                     </div>
-                                   </div>
-                                 </div>
-                                 <div class="row">
-                                   <div class="col-sm">
-                                     <div class="form-field">
-                                       <div class="form-field__control">
-                                         <label for="email" class="form-field__label">Sikkerheds nummer</label>
-                                         <input id="email" type="email" class="form-field__input" />
-                                       </div>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </form>
-                             </div>
-                              <button id="betal-privat-årlig">Betal og bliv medlem</button>
-                            </div>
-                            </div>
-                            <!-- Virksomheds betalings form for enkel betaling -->
-                            <div id="virksomhed-form-enkel" class="overlay">
-                            <div class="overlaystart">
-                             <span class="close">&times;</span>
-                               <h1>Jeres oplysninger</h1>
-                               <p>Tusind tak for at donere <b>200 kr</b> til os, i er med til at vores støtteforening kan fortsætte med at give tilbage til vores jura studerende. Udfyld denne formular og vi vil vende tilbage til jer hurtigst muligt. </p>
-                               <div class="container">
-                                <form novalidate>
-                                  <div class="row">
-                                    <div class="col-sm">
-                                      <div class="form-field">
-                                        <div class="form-field__control">
-                                          <label for="firstname" class="form-field__label">Virksomhedens navn</label>
-                                          <input id="firstname" type="text" class="form-field__input" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm">
-                                      <div class="form-field">
-                                        <div class="form-field__control">
-                                          <label for="firstname" class="form-field__label">CVR</label>
-                                          <input id="firstname" type="text" class="form-field__input" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm">
-                                      <div class="form-field">
-                                        <div class="form-field__control">
-                                          <label for="street"class="form-field__label">E-mail</label>
-                                          <input id="street" type="text" class="form-field__input" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm">
-                                      <div class="form-field">
-                                        <div class="form-field__control">
-                                          <label for="email" class="form-field__label">Telefon nr</label>
-                                          <input id="email" type="email" class="form-field__input" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </form>
-                              </div>
-                               <button id="virksomhed-betal-enkel">Send formular</button>
-                             </div>
-                             </div>
-                             <!-- Virksomheds betalings form for årlig betaling -->
-                             <div id="virksomhed-form-årlig" class="overlay">
-                             <div class="overlaystart">
-                              <span class="close">&times;</span>
-                                <h1>Jeres oplysninger</h1>
-                                <p>Tusind tak for at i vil støtte os årligt med <b>200 kr</b>, i er med til at vores støtteforening kan fortsætte med at give tilbage til vores jura studerende. Udfyld denne formular og vi vil vende tilbage til jer hurtigst muligt. </p>
-                                <div class="container">
-                                 <form novalidate>
-                                   <div class="row">
-                                     <div class="col-sm">
-                                       <div class="form-field">
-                                         <div class="form-field__control">
-                                           <label for="firstname" class="form-field__label">Virksomhedens navn</label>
-                                           <input id="firstname" type="text" class="form-field__input" />
-                                         </div>
-                                       </div>
-                                     </div>
-                                   </div>
-                                   <div class="row">
-                                     <div class="col-sm">
-                                       <div class="form-field">
-                                         <div class="form-field__control">
-                                           <label for="firstname" class="form-field__label">CVR</label>
-                                           <input id="firstname" type="text" class="form-field__input" />
-                                         </div>
-                                       </div>
-                                     </div>
-                                   </div>
-                                   <div class="row">
-                                     <div class="col-sm">
-                                       <div class="form-field">
-                                         <div class="form-field__control">
-                                           <label for="street"class="form-field__label">E-mail</label>
-                                           <input id="street" type="text" class="form-field__input" />
-                                         </div>
-                                       </div>
-                                     </div>
-                                   </div>
-                                   <div class="row">
-                                     <div class="col-sm">
-                                       <div class="form-field">
-                                         <div class="form-field__control">
-                                           <label for="email" class="form-field__label">Telefon nr</label>
-                                           <input id="email" type="email" class="form-field__input" />
-                                         </div>
-                                       </div>
-                                     </div>
-                                   </div>
-                                 </form>
-                               </div>
-                                <button id="virksomhed-betal-årlig">Send formular</button>
-                              </div>
-                              </div>
+                        <div id="one-pay" class="button button--below">Donér til retshjælpen 1 </div>
+                        <div id="yearly-pay" class="button button--below">Donér til retshjælpen 2</div>
                     </form>
                 </div>
             </div>

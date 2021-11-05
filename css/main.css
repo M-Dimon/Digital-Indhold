@@ -82,7 +82,8 @@ textarea {
     padding: 20px;
 }
 
-button {
+button,
+.button {
     width: 450px;
     height: 60px;
     font-size: 24px;
@@ -93,7 +94,15 @@ button {
     border: 0px;
 }
 
-button:hover {
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover {
     background-color: #2258a8;
     cursor: pointer;
 }
@@ -298,7 +307,8 @@ header {
     padding: 30px
 }
 
-.module__box button {
+.module__box button,
+.module__box .button {
     margin-bottom: 0px;
 }
 
@@ -324,7 +334,8 @@ header {
     right: 20px;
 }
 
-.module__box button {
+.module__box button,
+.module__box .button {
     width: 100%;
 }
 
