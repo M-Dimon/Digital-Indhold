@@ -24,13 +24,6 @@
   text-align: center;
 }
 
-.button--below {
-align-content: center;
-background-color: blue;
-color: white;
-width: 200px;
-border-radius: 5px;
-}
 
 /* The Close Button */
 .close {
