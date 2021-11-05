@@ -221,6 +221,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header__center {
@@ -257,6 +258,22 @@ header {
     height: 40px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
+}
+
+.header__video-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0F0F0F;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.header__video-overlay__video {
+    width: 1300px;
+    height: 732px;
+    background-color: black;
 }
 
 /*========================================================*/
@@ -361,6 +378,30 @@ header {
     border-radius: 50%;
     background: #04AA6D;
     cursor: pointer;
+}
+
+/* The slider itself END*/
+
+.slider-container2 {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slider-point {
+    flex-grow: 1;
+    border: 3px solid rgba(0,0,0,.2);
+}
+
+.slider-marker {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    background-color: blue;
 }
 
 .toggle {
@@ -670,13 +711,6 @@ footer {
     align-items: center;
 }
 
-.footer__box img {
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  padding: 4px;
-  width: 100px;
-}
-
 .odense img{
   border: 0px;
   width:280px;
@@ -704,4 +738,28 @@ footer {
 .footer__box p {
     font-size: 16px;
     color: var(--secoundary-text-color);
+}
+
+.social-box {
+    display: flex;
+}
+
+.social-box a {
+    text-decoration: none;
+}
+
+.social-box a:hover .social-box__media p {
+    color: var(--button-color);
+}
+
+.social-box__media {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.social-box__media img {
+    width: 30px;
+    margin-right: 5px;
 }
