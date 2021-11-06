@@ -16,11 +16,8 @@ videoOverlay.addEventListener("click", function(){
 
 const array =["a","b","c",]
 
-let i = 1;
-let length = array.length;
-let text = "";
-for (; i < length; i++) {
-    text += array[i] + "<br>";
-}
-
-console.log(array)
+array.forEach(
+    function(arrayItem) {
+        console.log(arrayItem);
+    }
+);
