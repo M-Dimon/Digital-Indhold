@@ -259,7 +259,11 @@ header {
 .video-box {
     width: 640px;
     height: 360px;
-    background-color: var(--third-text-color);
+}
+
+.video-box video {
+    width: 640px;
+    height: 360px;
 }
 
 .logo {

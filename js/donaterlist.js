@@ -33,6 +33,7 @@ donaterList.forEach(function(donaterItem) {
 
     const donaterLogoImage = document.createElement('img');
     donaterLogoImage.setAttribute('src', 'images/' + donaterItem.logo);
+    
     donaterLogo.appendChild(donaterLogoImage);
 
     const donaterAmount = document.createElement('div');
